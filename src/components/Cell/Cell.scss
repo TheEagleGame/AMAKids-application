@@ -1,0 +1,35 @@
+
+.square {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: deepskyblue;
+    cursor: pointer;
+
+    &_active {
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: url('./../../assets/flag.png') center no-repeat;
+            background-size: 50px 50px;
+        }
+    }
+
+    &_wrong {
+        background: red;
+    }
+
+    &_right {
+        background: green;
+    }
+
+    &_disable {
+        pointer-events: none;
+    }
+}

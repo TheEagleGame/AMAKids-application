@@ -1,0 +1,46 @@
+
+.moves {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1px;
+    width: 50%;
+    height: 200px;
+}
+
+.moves__item {
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+    transition: 200ms ease-in-out;
+
+    &_active {
+        background: white;
+    }
+}
+
+
+.arrow {
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    transition: 200ms ease-in-out;
+
+    &_hidden {
+        opacity: 0;
+    }
+
+    &_up {
+        transform: rotate(90deg);
+    }
+
+    &_right {
+        transform: rotate(180deg);
+    }
+
+    &_down {
+        transform: rotate(270deg);
+    }
+}
